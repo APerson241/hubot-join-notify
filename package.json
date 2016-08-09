@@ -2,17 +2,17 @@
   "name": "hubot-join-notify",
   "version": "1.0.0",
   "description": "Get a notification when a user comes online. Slack only.",
-  "author": "Daniel Glus (https://github.com/APerson241)",
+  "author": "Daniel Glus <danielhglus@gmail.com> (https://github.com/APerson241)",
   "contributors": [
     "Will Myers (https://github.com/griffinmyers)"
   ],
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/APerson214/hubot-join-notify",
+    "url": "https://github.com/APerson241/hubot-join-notify"
   },
   "bugs": {
-    "url": "git://github.com/button/hubot-join-notify/issues",
+    "url": "git://github.com/button/hubot-join-notify/issues"
   },
   "keywords": [
     "hubot",
