@@ -12,12 +12,8 @@ module.exports = function (robot) {
 
   robot.adapter && robot.adapter.client && robot.adapter.client.on("raw_message", function (message) {
     if(message.type === 'presence_change' && message.presence === 'active' && watched[message.user]) {
-<<<<<<< HEAD
-      while(watched[message.user].length) watched[message.user].shift()();
-=======
       for(var i = 0, functions = watched[message.user]; i < functions.length; i++) functions[i]();
       watched[message.user] = [];
->>>>>>> 5806ccc... Add code
     }
   });
 
