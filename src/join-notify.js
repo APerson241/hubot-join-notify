@@ -11,9 +11,11 @@ module.exports = function (robot) {
   var watched = {}; // Keyed on watched user IDs; values are arrays of bound res.reply calls.
 
   robot.adapter && robot.adapter.client && robot.adapter.client.on("raw_message", function (message) {
-    if(message.type === 'presence_change' && message.presence === 'active' && watched[message.user]) {
-      for(var i = 0, functions = watched[message.user]; i < functions.length; i++) functions[i]();
-      watched[message.user] = [];
+    messageJSON = JSON.parse(message);
+    
+    if(messageJSON.type === 'presence_change' && messageJSON.presence === 'active' && watched[messageJSON.user]) {
+      for(var i = 0, functions = watched[messageJSON.user]; i < functions.length; i++) functions[i]();
+      watched[messageJSON.user] = [];
     }
   });
 
