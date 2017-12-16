@@ -1,6 +1,6 @@
 {
   "name": "hubot-join-notify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get a notification when a user comes online. Slack only.",
   "author": "Daniel Glus <danielhglus@gmail.com> (https://github.com/APerson241)",
   "contributors": [
